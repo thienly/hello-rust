@@ -1,6 +1,6 @@
 # hello-rust
 `hello-rust` is simple application with warp for webapi and libp2p for peer to peer communication.It's really funny to leaning something new. :)   
-## Describe
+## Description
 The application is contains two main thread. 
 - Web Server.
 - Peer to Peer listener.  
