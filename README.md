@@ -30,5 +30,5 @@ curl --location --request POST 'http://localhost:3030/pokemons' \
 }'
 `   
 - Checking data.  
-`curl --location --request GET 'http://localhost:3032/pokemons'` 
+`curl --location --request GET 'http://localhost:3031/pokemons'` 
 The list of pokemons is returned via.
