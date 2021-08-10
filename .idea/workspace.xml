@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a13bddf-a7fc-4dbd-b632-3a414ebcbf26" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chat.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models.rs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KonanWorkspace">
+    <executables />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="rv7ls2w3" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wMIhkK1H3VNmBfV8ulHsRT3T8G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/thienly/Desktop/rust/src/api.rs" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/thienly/Desktop/rust/src/chat.rs" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/thienly/Desktop/rust/src/main.rs" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/thienly/Desktop/rust/src/models.rs" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/Users/thienly/Desktop/rust/src/passive-discovery.rs" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/bin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run ping" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package ping --bin ping" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Run ping" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a13bddf-a7fc-4dbd-b632-3a414ebcbf26" name="Default Changelist" comment="" />
+      <created>1628262151417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628262151417</updated>
+      <workItem from="1628262153243" duration="6772000" />
+      <workItem from="1628386929275" duration="3507000" />
+      <workItem from="1628390597890" duration="7861000" />
+      <workItem from="1628435851126" duration="2082000" />
+      <workItem from="1628438823447" duration="27855000" />
+      <workItem from="1628516946757" duration="10673000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="653" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1628522446755">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-81.-1057.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1628392249117" />
+    <state x="653" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1628522446755" />
+    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628560045132">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1628560045132" />
+    <state width="1638" height="266" key="GridCell.Tab.0.bottom" timestamp="1628435835195">
+      <screen x="0" y="23" width="1680" height="984" />
+    </state>
+    <state width="1638" height="266" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1628435835195" />
+    <state width="1638" height="266" key="GridCell.Tab.0.center" timestamp="1628435835195">
+      <screen x="0" y="23" width="1680" height="984" />
+    </state>
+    <state width="1638" height="266" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1628435835195" />
+    <state width="1638" height="266" key="GridCell.Tab.0.left" timestamp="1628435835195">
+      <screen x="0" y="23" width="1680" height="984" />
+    </state>
+    <state width="1638" height="266" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1628435835195" />
+    <state width="1638" height="266" key="GridCell.Tab.0.right" timestamp="1628435835195">
+      <screen x="0" y="23" width="1680" height="984" />
+    </state>
+    <state width="1638" height="266" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1628435835195" />
+    <state x="341" y="154" key="SettingsEditor" timestamp="1628434631630">
+      <screen x="0" y="23" width="1680" height="984" />
+    </state>
+    <state x="341" y="154" key="SettingsEditor/0.23.1680.984@0.23.1680.984" timestamp="1628434631630" />
+    <state x="-1147" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628482159255">
+      <screen x="-1920" y="23" width="1920" height="1017" />
+    </state>
+    <state x="-1147" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.23.1920.1017/0.23.1680.1027@-1920.23.1920.1017" timestamp="1628482159255" />
+  </component>
+</project>
