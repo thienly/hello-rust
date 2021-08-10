@@ -6,14 +6,14 @@ The application is contains two main thread.
 - Peer to Peer listener.  
 They communicate through `mpsc` tokio module.
 The data are stored in memory as a `Arc<RwLock<HashMap<String,Pokemon>`
-##How to run
+## How to run
 - Checkout source code.
 - Install rust if you don't have it. rust will include `cargo` which is used to run the application.
 - Run application through terminal.  
  `export PORT={port_number}; cargo run`; `the port_number` is web server port that serves incoming request.
 - Run it to others terminal.  
  
-##Example
+## Example
 - Open two terminals for running the application.
 - `export PORT=3030; cargo run` -> for 1st terminal.  
 - `export PORT=3031; cargo run` -> for 2nd terminal.
@@ -31,4 +31,4 @@ curl --location --request POST 'http://localhost:3030/pokemons' \
 `   
 - Checking data.  
 `curl --location --request GET 'http://localhost:3031/pokemons'` 
-The list of pokemons is returned via.
+The list of pokemons is returned via terminal.
