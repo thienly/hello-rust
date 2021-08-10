@@ -22,14 +22,14 @@ use std::str::FromStr;
 use tokio::sync::mpsc::Receiver;
 
 #[derive(NetworkBehaviour)]
-struct MyBehavior {
+struct ChatBehavior {
     flood_sub: Floodsub,
     msdn: Mdns,
     #[behaviour(ignore)]
     #[allow(dead_code)]
     dbs: Pokemons
 }
-impl NetworkBehaviourEventProcess<FloodsubEvent> for MyBehavior{
+impl NetworkBehaviourEventProcess<FloodsubEvent> for ChatBehavior {
     fn inject_event(&mut self, event: FloodsubEvent) {
         match event {
             FloodsubEvent::Message(message) => {
@@ -46,7 +46,7 @@ impl NetworkBehaviourEventProcess<FloodsubEvent> for MyBehavior{
         }
     }
 }
-impl NetworkBehaviourEventProcess<MdnsEvent> for MyBehavior {
+impl NetworkBehaviourEventProcess<MdnsEvent> for ChatBehavior {
     fn inject_event(&mut self, event: MdnsEvent) {
         match event {
             MdnsEvent::Discovered(list) => {
@@ -76,7 +76,7 @@ pub async fn run(rx: &mut Receiver<Pokemon>, dbs: Pokemons) {
 
     let mut swarm = {
         let mdns = task::block_on(Mdns::new(MdnsConfig::default())).unwrap();
-        let mut behavior = MyBehavior {
+        let mut behavior = ChatBehavior {
             flood_sub: Floodsub::new(local_peer_id),
             msdn: mdns,
             dbs
@@ -85,14 +85,9 @@ pub async fn run(rx: &mut Receiver<Pokemon>, dbs: Pokemons) {
         Swarm::new(transport.unwrap(), behavior, local_peer_id)
     };
     let multiaddr = Multiaddr::from_str("/ip4/0.0.0.0/tcp/0").unwrap();
-    let id = swarm.listen_on(multiaddr);
-    if id.is_err() {
-        println!("Swarm can not started");
-    } else {
-        println!("Swarm is starting");
-    }
+    swarm.listen_on(multiaddr);
 
-   task::block_on(future::poll_fn(move |cx: &mut Context<'_>| {
+    task::block_on(future::poll_fn(move |cx: &mut Context<'_>| {
         loop {
             match swarm.poll_next_unpin(cx) {
                 Poll::Ready(Some(event)) => {
@@ -108,7 +103,7 @@ pub async fn run(rx: &mut Receiver<Pokemon>, dbs: Pokemons) {
            match rx.poll_recv(cx) {
                Poll::Ready(Some(message)) => {
                    println!("{}", message.name);
-                   let result = serde_json::to_string(&message.clone());
+                   let result = serde_json::to_string(&message);
                    let string = result.unwrap();
                    swarm.behaviour_mut().flood_sub.publish(floodsub_topic.clone(), string.as_bytes())
                }
